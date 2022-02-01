@@ -21,4 +21,4 @@ func _process(delta):
 	var direction = (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
 
 	position += direction / 10 * speed_multiplier
-	position.y += ( float(Input.is_key_pressed(KEY_E)) - float(Input.is_key_pressed(KEY_Q)) )  / 10 * speed_multiplier
+	position.y += ( float(Input.is_key_pressed(KEY_SPACE)) - float(Input.is_key_pressed(KEY_CTRL)) )  / 10 * speed_multiplier
